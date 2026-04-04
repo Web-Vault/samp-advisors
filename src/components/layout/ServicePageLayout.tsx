@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { LucideIcon } from "lucide-react";
+import { HelpCard } from "@/components/ui/HelpCard";
 
 interface ServicePageLayoutProps {
   title: string;
@@ -83,26 +84,11 @@ export function ServicePageLayout({
           <div className="max-w-4xl mx-auto text-center mb-16">
             <span className="text-sm font-bold tracking-[0.2em] text-primary uppercase">Advisory Support</span>
             <h2 className="text-3xl md:text-4xl text-primary font-serif font-bold mt-4">What We Help With</h2>
-            <p className="text-muted-foreground mt-4 italic text-sm">Hover over each area to see how we assist you.</p>
+            <p className="text-muted-foreground mt-4 italic text-sm">Tap or hover over each area to see how we assist you.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whatWeHelpWith.map((item, idx) => (
-              <div 
-                key={idx} 
-                className="group relative bg-white p-8 border border-border shadow-sm transition-all duration-300 hover:shadow-xl hover:border-primary/20 min-h-[180px] flex flex-col justify-center"
-              >
-                <div className="flex flex-col h-full transition-all duration-500 group-hover:opacity-0 group-hover:-translate-y-2">
-                  <CheckCircle2 className="text-primary mb-4 shrink-0" size={24} />
-                  <p className="text-primary font-bold text-lg leading-tight">{item.title}</p>
-                </div>
-                
-                <div className="absolute inset-0 p-8 flex flex-col justify-center opacity-0 translate-y-2 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 bg-primary pointer-events-none">
-                  <p className="text-white font-bold mb-2 text-sm uppercase tracking-widest border-b border-primary/10 pb-2">What we help with:</p>
-                  <p className="text-white/80 text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
+              <HelpCard key={idx} item={item} />
             ))}
           </div>
         </Container>

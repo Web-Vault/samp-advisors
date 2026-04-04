@@ -97,9 +97,9 @@ export default function Services() {
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   {service.description}
                 </p>
-                <Link href={`/services/${service.slug}`}>
-                  <Button variant="outline" size="lg" className="group">
-                    Learn More About This Service
+                <Link href={`/services/${service.slug}`} className="w-full sm:w-auto">
+                  <Button variant="outline" size="lg" className="group w-full whitespace-nowrap">
+                    Learn More About This
                     <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
@@ -128,8 +128,8 @@ export default function Services() {
             Every business is unique. We pride ourselves on creating bespoke financial strategies that align with your specific objectives.
           </p>
           <div className="flex justify-center relative z-10">
-            <Link href="/contact">
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 px-12">
+            <Link href="/contact" className="w-full sm:w-auto">
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 px-6 sm:px-12 w-full whitespace-nowrap">
                 Let's Discuss Your Needs
               </Button>
             </Link>

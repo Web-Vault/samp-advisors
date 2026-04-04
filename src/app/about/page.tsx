@@ -43,9 +43,9 @@ export default function About() {
                 CPA
               </div>
             </div>
-            <div className="absolute -top-6 -right-6 p-8 bg-white shadow-xl border border-border">
-              <span className="text-5xl font-bold text-primary">0+</span>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mt-2">Years of Excellence</p>
+            <div className="absolute -top-7 -right-7 p-8 bg-white shadow-xl border border-border max-sm:right-0 max-sm:left-auto max-sm:translate-x-3 max-sm:translate-y-5 max-sm:top-auto max-sm:bottom-0 max-sm:transform-none max-sm:p-4 max-sm:shadow-lg">
+              <span className="text-5xl font-bold text-primary max-sm:text-3xl">10+</span>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mt-2 max-sm:text-[0.65rem]">Years of Excellence</p>
             </div>
           </div>
         </div>

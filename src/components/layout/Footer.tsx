@@ -106,8 +106,8 @@ export function Footer() {
           </p>
           <div className="flex gap-8">
             <Link href="/legal/privacy" className="text-white/40 hover:text-white text-sm transition-colors">Privacy</Link>
-            <Link href="/legal/terms" className="text-white/40 hover:text-white text-sm transition-colors">Terms</Link>
-            <Link href="/legal/cookies" className="text-white/40 hover:text-white text-sm transition-colors">Cookies</Link>
+            {/* <Link href="/legal/terms" className="text-white/40 hover:text-white text-sm transition-colors">Terms</Link> */}
+            {/* <Link href="/legal/cookies" className="text-white/40 hover:text-white text-sm transition-colors">Cookies</Link> */}
           </div>
         </div>
       </Container>

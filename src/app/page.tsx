@@ -33,17 +33,17 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square bg-muted rounded-sm overflow-hidden shadow-2xl relative">
                 <div className="absolute inset-0 bg-primary/10" />
-                <div className="w-full h-full flex items-center justify-center text-primary/10 font-serif text-8xl italic">
+                <div className="w-full h-full flex items-center justify-center text-primary/10 font-serif text-4xl sm:text-6xl lg:text-8xl italic">
                   ADVISORY
                 </div>
               </div>
-              <div className="absolute -bottom-8 -right-8 p-12 bg-primary text-white shadow-2xl max-w-sm">
-                <h3 className="text-3xl font-serif font-bold mb-4">Precision & Integrity</h3>
-                <p className="text-white/80 leading-relaxed mb-6">
+              <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 lg:-bottom-8 lg:-right-8 p-6 sm:p-8 lg:p-12 bg-primary text-white shadow-2xl max-w-[80%] sm:max-w-xs lg:max-w-sm">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-serif font-bold mb-4">Precision & Integrity</h3>
+                <p className="text-white/80 leading-relaxed mb-6 text-sm sm:text-base">
                   We believe that financial excellence is built on a foundation of trust and meticulous attention to detail.
                 </p>
                 <Link href="/about">
-                  <span className="text-sm font-bold uppercase tracking-[0.2em] border-b-2 border-white pb-1 hover:text-white/70 transition-colors cursor-pointer">
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] border-b-2 border-white pb-1 hover:text-white/70 transition-colors cursor-pointer">
                     Meet Our Directors
                   </span>
                 </Link>
